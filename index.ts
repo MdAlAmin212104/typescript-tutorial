@@ -1,4 +1,5 @@
 console.log('hello typescript');
 console.log('Now I start typescript learning');
-const userName: string = 'md al amin islam';
+let userName: string = 'md al amin islam';
+userName = 'al amin'
 console.log(userName);
