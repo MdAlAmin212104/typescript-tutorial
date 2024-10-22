@@ -10,3 +10,8 @@ function total(a, b) {
     return a + b;
 }
 console.log(total(125, 20));
+var userId;
+userId = '01';
+userId = 3;
+userId = true;
+console.log(userId);

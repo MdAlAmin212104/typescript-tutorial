@@ -14,3 +14,10 @@ function total(a: number, b: number){
 }
 
 console.log(total(125,20));
+
+let userId : number | string | boolean;
+userId = '01';
+userId = 3;
+userId = true;
+
+console.log(userId);
