@@ -21,3 +21,17 @@ userId = 3;
 userId = true;
 
 console.log(userId);
+
+
+
+let users :{
+    userName:string;
+    userId: number;
+}
+
+users = {
+    userName: 'md al amin islam',
+    userId: 3, 
+}
+
+console.log(users.userName);
