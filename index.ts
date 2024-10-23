@@ -24,14 +24,22 @@ console.log(userId);
 
 
 
-let users :{
-    userName:string;
-    userId: number;
-}
+let users :  object[];
+users = [];
 
-users = {
-    userName: 'md al amin islam',
-    userId: 3, 
+let user1 : {
+    name: string;
+    age: number;
 }
+user1 = {name: 'john', age: 23};
+users.push(user1);
+let user2:{
+    name: string;
+    age: number;
+}
+user2 = {name: 'ali', age: 25}
+users.push(user2);
 
-console.log(users.userName);
+for(const key in users){
+    console.log(users[key]['name']);
+}

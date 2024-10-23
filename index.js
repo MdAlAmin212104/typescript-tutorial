@@ -16,8 +16,13 @@ userId = 3;
 userId = true;
 console.log(userId);
 var users;
-users = {
-    userName: 'md al amin islam',
-    userId: 3,
-};
-console.log(users.userName);
+users = [];
+var user1;
+user1 = { name: 'john', age: 23 };
+users.push(user1);
+var user2;
+user2 = { name: 'ali', age: 25 };
+users.push(user2);
+for (var key in users) {
+    console.log(users[key]['name']);
+}
