@@ -43,3 +43,21 @@ users.push(user2);
 for(const key in users){
     console.log(users[key]['name']);
 }
+
+class User {
+    userName: string; 
+    userId: number;
+
+    constructor(userName: string, userId: number){
+        this.userName = userName;
+        this.userId = userId;
+    }
+
+    display() : void{
+        console.log(`Name: ${this.userName}, UserId: ${this.userId}`);
+    }
+}
+
+let userObj = new User('John Doe', 1);
+
+userObj.display();

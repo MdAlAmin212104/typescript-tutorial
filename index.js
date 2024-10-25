@@ -26,3 +26,15 @@ users.push(user2);
 for (var key in users) {
     console.log(users[key]['name']);
 }
+var User = /** @class */ (function () {
+    function User(userName, userId) {
+        this.userName = userName;
+        this.userId = userId;
+    }
+    User.prototype.display = function () {
+        console.log("Name: ".concat(this.userName, ", UserId: ").concat(this.userId));
+    };
+    return User;
+}());
+var userObj = new User('John Doe', 1);
+userObj.display();
